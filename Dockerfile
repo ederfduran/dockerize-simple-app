@@ -1,5 +1,5 @@
 FROM python:3.5
-RUN pip install Flask==0.11.1
+RUN pip install Flask==0.11.1 redis==2.10.5
 # add user admin to bash. -ms will create default home directory for this admin user
 # and set default shell for this user to bash
 RUN useradd -ms /bin/bash admin
